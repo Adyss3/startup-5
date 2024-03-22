@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+:root{
+    --dmsans: "DM Sans", sans-serif;
+    --primary-blue: #25DAC5;
+    --btn-bg:  white;
+    --dark-blue: #1E0E62;
+    --small-font: 24px;
+    --h1-font: 58px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--dmsans);
+    color: inherit;
+    font-size: inherit;
+    }
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+nav .logo{
+    text-align: left;
+    font-style: var(--dmsans);
+    font-size: 24px;
+    font-weight: bold;
+    color: #1E0E62;
+}
+
+nav div ul{
+    font-size: var(--small-font);
+    color: #1E0E62;
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    text-align: right;
+}
+
+nav div ul a{
+text-decoration: none;
+text-align: right;
+}
+
+.btn{
+    border: 2px solid gray;
+    border-radius: 50px;
+    padding: 8px 20px;
+}
+
+
+
+main{
+    text-align: center;
+}
+
+main .move h1{
+    font-size: var(--h1-font);
+    color: var(--dark-blue);
+    width: 70%;
+    margin: auto;
+    padding: 30px 0;
+}
+
+main .move a{
+    text-decoration: none;
+    font-size: var(--small-font);
+    border-radius: 50px;
+    border: 2px solid var(--primary-blue);
+    padding: 8px 20px;
+    background-color: var(--primary-blue);
+    color: white;
+}
+
+main .img{
+    padding: 30px 0;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 60px;
+    color: gray;
+    font-size: var(--small-font);
+    line-height: 31px;
+    letter-spacing: 1pxit commit -m;
+}
+.second{
+    border-left: 2px solid gray;
+    border-right: 2px solid gray;
+}
+
+
+@media (max-width:980px) {
+
+    nav div ul{
+        display: none;
+    }
+
+    main .move h1{
+        width: 90%;
+        margin: auto;
+        padding: 20px 0;
+        font-size: 25px;
+    }
+
+    main{
+    text-align: center;
+    }
+
+    main .img{
+        padding: 30px 0;
+        width: 80%;
+    }
+    
+    .flex{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .second{
+        border: none;
+        border-top: 2px solid gray;
+        border-bottom: 2px solid gray;
+        justify-content: space-between;
+        padding: 20px 0;
+        border-width: 1px;
+        
+        }
+
+    main div small:first-of-type{
+        padding: 20px 0;
+    }
+
+    main div small:last-of-type{
+        padding: 20px 0;
+    }
+    
+    main .move a{
+        font-size: 16px;
+        padding: 6px 20px;
+    }
+}
